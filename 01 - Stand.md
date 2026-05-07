@@ -26,7 +26,14 @@
 
 <img width="300" height="370" alt="изображение" src="https://github.com/user-attachments/assets/8deefdbc-4509-44ec-9ea7-1713eaec6afd" />
 
-Добавляем сетевые интерфейсы `lan`, `dmz`, `net`, задаем статические адреса:
+Добавляем сетевые интерфейсы `lan`, `dmz`, `net` в **/etc/config/networ**, задаем статические адреса:
 
-<img width="731" height="424" alt="изображение" src="https://github.com/user-attachments/assets/04031c1a-09ad-4dc2-b576-a9948b9f897c" />
+<img width="717" height="401" alt="изображение" src="https://github.com/user-attachments/assets/806355c5-06ad-45a7-91a5-bd5fa317eebf" />
+<img width="730" height="162" alt="изображение" src="https://github.com/user-attachments/assets/a621940c-38da-4482-a7cf-63b09ae60ad1" />
+
+Настраиваем DHCP в **/etc/config/dhcp**:
+
+<img width="726" height="374" alt="изображение" src="https://github.com/user-attachments/assets/1bdb49ee-a907-412d-931d-5247a073e5d4" />
+<img width="731" height="141" alt="изображение" src="https://github.com/user-attachments/assets/5a0d098c-0a21-486a-ac07-0fc1355eeb77" />
+
 
