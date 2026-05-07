@@ -36,4 +36,5 @@
 <img width="726" height="374" alt="изображение" src="https://github.com/user-attachments/assets/1bdb49ee-a907-412d-931d-5247a073e5d4" />
 <img width="731" height="141" alt="изображение" src="https://github.com/user-attachments/assets/5a0d098c-0a21-486a-ac07-0fc1355eeb77" />
 
+Настриваем Межсетевой экран в **/etc/config/firewall**:
 
