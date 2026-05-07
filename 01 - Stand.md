@@ -26,4 +26,7 @@
 
 <img width="300" height="370" alt="изображение" src="https://github.com/user-attachments/assets/8deefdbc-4509-44ec-9ea7-1713eaec6afd" />
 
+Добавляем сетевые интерфейсы `lan`, `dmz`, `net`, задаем статические адреса:
+
+<img width="731" height="424" alt="изображение" src="https://github.com/user-attachments/assets/04031c1a-09ad-4dc2-b576-a9948b9f897c" />
 
