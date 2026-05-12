@@ -1,4 +1,4 @@
-# Инвентаризация сети
+<img width="760" height="570" alt="изображение" src="https://github.com/user-attachments/assets/79ad9b56-738a-4e08-afc8-cd95e2b1792f" /># Инвентаризация сети
 
 ## Основные задачи
 
@@ -74,7 +74,7 @@
 
 ## Определение ОС служб и их версий
 
-### Узел `kali.lan`
+### 1) Узел `kali.lan`
 
 <img width="822" height="286" alt="изображение" src="https://github.com/user-attachments/assets/a221f0ec-4689-4903-b105-88e90287699c" />
 
@@ -89,7 +89,7 @@
 |------|-----------|--------|---------------------|
 | 22/tcp | open | SSH | OpenSSH 10.0p2 Debian 5 |
 
-### Узел `metasploitable3-ub1404.lan`
+### 2) Узел `metasploitable3-ub1404.lan`
 
 <img width="973" height="784" alt="изображение" src="https://github.com/user-attachments/assets/d9c02afe-ed3e-406c-ae37-ad9ce989e879" />
 
@@ -114,7 +114,7 @@
 | 3000/tcp | closed | ppp | - |
 | 8081/tcp | closed | intermapper | - |
 
-### Узел `OpenWrt.lan`
+### 3) Узел `OpenWrt.lan`
 
 <img width="973" height="523" alt="изображение" src="https://github.com/user-attachments/assets/65cd79aa-9a8e-4d4d-8ae9-0d9a35cc6209" />
 
@@ -135,11 +135,12 @@
 
 ## Проверка на уязвимости
 
-### Узел `kali.lan`
+### 1) Узел `kali.lan`
 
 <img width="976" height="408" alt="изображение" src="https://github.com/user-attachments/assets/4072b423-6ea4-4a5d-9914-180d3c29f27c" />
 
 ### Уязвимости
+
 | Порт | Служба | CVE | CVSS |
 |------|--------|-----|------|
 | 22/tcp | OpenSSH 10.0p2 | CVE-2026-35414 | 8.1 |
@@ -152,11 +153,30 @@
 | 22/tcp | OpenSSH 10.0p2 | 4C6E2182-0E99-5626-83F6-1646DD648C57 | 3.6 |
 | 22/tcp | OpenSSH 10.0p2 | CVE-2026-35388 | 2.5 |
 
-### Узел `metasploitable3-ub1404.lan`
+### 2) Узел `metasploitable3-ub1404.lan`
 
-<img width="976" height="774" alt="изображение" src="https://github.com/user-attachments/assets/9d71482f-8f79-4724-ae80-91c41d3d2c83" />
+<img width="760" height="570" alt="изображение" src="https://github.com/user-attachments/assets/1014d8c6-7b49-4247-94b0-51d8d5c1765f" />
 
+### Уязвимости
 
+| Порт | Служба | Уязвимость |
+|------|--------|------------|
+| 21/tcp | ProFTPD 1.3.5 | Требуется дополнительное сканирование с vulners |
+| 22/tcp | OpenSSH 6.6.1p1 | Требуется дополнительное сканирование с vulners |
+| 80/tcp | Apache 2.4.7 | SQL-инъекции |
+| 80/tcp | Apache 2.4.7 | XSS (DOM-based) |
+| 80/tcp | Apache 2.4.7 | CSRF |
+| 80/tcp | Apache 2.4.7 | Slowloris DoS (CVE-2007-6750) |
+| 80/tcp | Apache 2.4.7 | Листинг директорий |
+| 80/tcp | Apache 2.4.7 | phpMyAdmin |
+| 445/tcp | Samba smbd 3.X-4.X | regsvc DoS (null dereference) |
+| 3306/tcp | MySQL | Неавторизованный доступ |
+| 3500/tcp | WEBrick 1.3.1 | Slowloris DoS (CVE-2007-6750) |
+| 6697/tcp | UnrealIRCd | Троянизированная версия (backdoor) |
+| 8080/tcp | Jetty 8.1.7 | CSRF |
+| 8080/tcp | Jetty 8.1.7 | Slowloris DoS (CVE-2007-6750) |
+| 631/tcp | CUPS 1.7 | Slowloris DoS (CVE-2007-6750) |
 
-### Узел `OpenWrt.lan`
+### 3) Узел `OpenWrt.lan`
 
+### Уязвимости
