@@ -100,6 +100,9 @@
 
 <img width="298" height="364" alt="изображение" src="https://github.com/user-attachments/assets/515832e3-694f-49f1-8e05-f90b5c2182a9" />
 
-## Настройка статических адресов
+## Проверка настройки адресов
 
+По адресу `http://192.168.80.143/cgi-bin/luci/admin/network/dhcp` можно проверить настроенную сеть, где `192.168.80.143` - IP-адрес роутера на интерфейсе `eth0` \ `NAT`:
+
+<img width="1207" height="724" alt="изображение" src="https://github.com/user-attachments/assets/70d95e3d-b1f8-43b0-b20a-dbfbda9a3878" />
 
