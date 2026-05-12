@@ -1,4 +1,4 @@
-<img width="760" height="570" alt="изображение" src="https://github.com/user-attachments/assets/79ad9b56-738a-4e08-afc8-cd95e2b1792f" /># Инвентаризация сети
+# Инвентаризация сети
 
 ## Основные задачи
 
@@ -155,7 +155,7 @@
 
 ### 2) Узел `metasploitable3-ub1404.lan`
 
-<img width="760" height="570" alt="изображение" src="https://github.com/user-attachments/assets/1014d8c6-7b49-4247-94b0-51d8d5c1765f" />
+<img width="760" height="570" alt="изображение" src="https://github.com/user-attachments/assets/79ad9b56-738a-4e08-afc8-cd95e2b1792f" />
 
 ### Уязвимости
 
