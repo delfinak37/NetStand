@@ -1,4 +1,4 @@
-<img width="298" height="364" alt="изображение" src="https://github.com/user-attachments/assets/515832e3-694f-49f1-8e05-f90b5c2182a9" /># Стенд системы
+# Стенд системы
 
 ## Основные задачи
 
@@ -98,4 +98,8 @@
 
 - NetworkAdapter - `LAN Segment(NET)`
 
-<img width="300" height="361" alt="изображение" src="https://github.com/user-attachments/assets/11e9b6b6-a2f8-4722-b094-3d57bc8acd03" />
+<img width="298" height="364" alt="изображение" src="https://github.com/user-attachments/assets/515832e3-694f-49f1-8e05-f90b5c2182a9" />
+
+## Настройка статических адресов
+
+
