@@ -10,6 +10,7 @@
 
 В работе используются следующие системы:
 
+  - **VMware** - ПО для виртуализации
   - **OpenWrt** - в роли маршрутизатора
   - **Kali Linux** - атакующая машина
   - **Ubuntu Server** - сервер
@@ -66,3 +67,27 @@
   - Разрешён доступ к NET
   - Разрешён доступ к LAN
   - Запрещён доступ к роутеру
+
+## Настройка роутера Mestasploitable3
+
+Создание виртуальной машины в `Vmware`, настройка сетевых интерфейсов на устройстве:
+
+- NetworkAdapter - `LAN Segment(DMZ)`
+- NetworkAdapter 2 - `NAT`
+
+<img width="294" height="277" alt="изображение" src="https://github.com/user-attachments/assets/87814103-4dfe-44ca-9efe-31bf297593bb" />
+
+Вход в систему Metasploitable3:
+
+  - **login**: `vargant`
+  - **password**: `vargant`
+
+<img width="800" height="577" alt="изображение" src="https://github.com/user-attachments/assets/5be06b47-d502-484e-81b6-33d6ff1fd516" />
+
+## Настройка роутера Kali linux
+
+Создание виртуальной машины в `Vmware`, настройка сетевого интерфейса на устройстве:
+
+- NetworkAdapter - `LAN Segment(LAN)`
+
+## Настройка роутера Ubuntu Server
