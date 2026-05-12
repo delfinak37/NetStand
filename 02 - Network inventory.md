@@ -159,23 +159,20 @@
 
 ### Уязвимости
 
-| Порт | Служба | Уязвимость |
-|------|--------|------------|
-| 21/tcp | ProFTPD 1.3.5 | Требуется дополнительное сканирование с vulners |
-| 22/tcp | OpenSSH 6.6.1p1 | Требуется дополнительное сканирование с vulners |
-| 80/tcp | Apache 2.4.7 | SQL-инъекции |
-| 80/tcp | Apache 2.4.7 | XSS (DOM-based) |
-| 80/tcp | Apache 2.4.7 | CSRF |
-| 80/tcp | Apache 2.4.7 | Slowloris DoS (CVE-2007-6750) |
-| 80/tcp | Apache 2.4.7 | Листинг директорий |
-| 80/tcp | Apache 2.4.7 | phpMyAdmin |
-| 445/tcp | Samba smbd 3.X-4.X | regsvc DoS (null dereference) |
-| 3306/tcp | MySQL | Неавторизованный доступ |
-| 3500/tcp | WEBrick 1.3.1 | Slowloris DoS (CVE-2007-6750) |
-| 6697/tcp | UnrealIRCd | Троянизированная версия (backdoor) |
-| 8080/tcp | Jetty 8.1.7 | CSRF |
-| 8080/tcp | Jetty 8.1.7 | Slowloris DoS (CVE-2007-6750) |
-| 631/tcp | CUPS 1.7 | Slowloris DoS (CVE-2007-6750) |
+| Порт | Служба | Уязвимость | CVSS | Эксплойт |
+|------|--------|------------|------|----------|
+| 21/tcp | ProFTPD 1.3.5 | CVE-2015-3306 (mod_copy RCE) | 10.0 | Metasploit |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2023-38408 (RCE через PKCS#11) | 9.8 | Есть эксплойты |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2016-1908 (X11 forwarding DoS) | 9.8 | Эксплойт |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2020-15778 (scp command injection) | 7.8 | EDB-ID:46516 |
+| 80/tcp | Apache 2.4.7 | SQL-инъекции | — | Встроенный скрипт nmap |
+| 80/tcp | Apache 2.4.7 | DOM-based XSS | — | Встроенный скрипт nmap |
+| 80/tcp | Apache 2.4.7 | CSRF | — | Встроенный скрипт nmap |
+| 80/tcp | Apache 2.4.7 | Slowloris DoS (CVE-2007-6750) | — | Уязвим |
+| 3306/tcp | MySQL | Неавторизованный доступ | — | Любой клиент MySQL |
+| 6697/tcp | UnrealIRCd | Троянизированная версия (backdoor) | 10.0 | Metasploit |
+| 8080/tcp | Jetty 8.1.7 | CSRF | — | Встроенный скрипт nmap |
+| 8080/tcp | Jetty 8.1.7 | Slowloris DoS (CVE-2007-6750) | — | Уязвим |
 
 ### 3) Узел `OpenWrt.lan`
 
