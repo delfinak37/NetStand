@@ -17,7 +17,7 @@
 
 ## Настройка роутера OpenWrt
 
-Создаем виртуальный роутер в `Vmware`, также настраиваем сетевые интерфейсы на устройстве:
+Создание виртуального роутера в `Vmware`, настройка сетевых интерфейсов на устройстве:
 
 - NetworkAdapter - `NAT`
 - NetworkAdapter 2 - `LAN Segment(LAN)`
@@ -26,15 +26,16 @@
 
 <img width="300" height="370" alt="изображение" src="https://github.com/user-attachments/assets/8deefdbc-4509-44ec-9ea7-1713eaec6afd" />
 
-Добавляем сетевые интерфейсы `lan`, `dmz`, `net` в **/etc/config/networ**, задаем статические адреса:
+Добавление сетевых интерфейсов `lan`, `dmz`, `net` в `/etc/config/network`, присваивание статических адресов:
 
-<img width="717" height="401" alt="изображение" src="https://github.com/user-attachments/assets/806355c5-06ad-45a7-91a5-bd5fa317eebf" />
-<img width="730" height="162" alt="изображение" src="https://github.com/user-attachments/assets/a621940c-38da-4482-a7cf-63b09ae60ad1" />
+<img width="576" height="497" alt="изображение" src="https://github.com/user-attachments/assets/fb03e61c-a789-4a68-8ebf-839c703adb93" />
 
-Настраиваем DHCP в **/etc/config/dhcp**:
+Настройка DHCP в `/etc/config/dhcp`:
 
-<img width="726" height="374" alt="изображение" src="https://github.com/user-attachments/assets/1bdb49ee-a907-412d-931d-5247a073e5d4" />
-<img width="731" height="141" alt="изображение" src="https://github.com/user-attachments/assets/5a0d098c-0a21-486a-ac07-0fc1355eeb77" />
+<img width="317" height="506" alt="изображение" src="https://github.com/user-attachments/assets/6c3c389b-8ae7-4eb5-a9d1-1595b9bfb8e8" />
 
-Настриваем Межсетевой экран в **/etc/config/firewall**:
+Настройка межсетевого экрана в `/etc/config/firewall`, для `lan`, `dmz`, `net` одинаковые параметры, исключением `lan` - разрешены входящие от него сообщения:
+
+<img width="343" height="407" alt="изображение" src="https://github.com/user-attachments/assets/5bf7266a-7c6c-483c-ab4f-88d5317e9a08" />
+
 
