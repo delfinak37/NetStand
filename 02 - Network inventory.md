@@ -155,21 +155,181 @@
 
 ### 2) Узел `metasploitable3-ub1404.lan`
 
-<img width="760" height="570" alt="изображение" src="https://github.com/user-attachments/assets/79ad9b56-738a-4e08-afc8-cd95e2b1792f" />
+<img width="911" height="620" alt="изображение" src="https://github.com/user-attachments/assets/89979332-176d-484f-8abb-79aaf58c71c9" />
+
 
 ### Уязвимости
 
 | Порт | Служба | Уязвимость | CVSS | Эксплойт |
 |------|--------|------------|------|----------|
-| 21/tcp | ProFTPD 1.3.5 | CVE-2015-3306 (mod_copy RCE) | 10.0 | Metasploit |
-| 22/tcp | OpenSSH 6.6.1p1 | CVE-2023-38408 (RCE через PKCS#11) | 9.8 | Есть эксплойты |
-| 22/tcp | OpenSSH 6.6.1p1 | CVE-2016-1908 (X11 forwarding DoS) | 9.8 | Эксплойт |
+| 21/tcp | ProFTPD 1.3.5 | CVE-2015-3306 (mod_copy RCE) | 10.0 | Metasploit, EDB-ID:37262, EDB-ID:49908 |
+| 21/tcp | ProFTPD 1.3.5 | CVE-2026-44331 | 8.1 | Нет |
+| 21/tcp | ProFTPD 1.3.5 | CVE-2024-48651 | 7.5 | Нет |
+| 21/tcp | ProFTPD 1.3.5 | CVE-2023-51713 | 7.5 | Нет |
+| 21/tcp | ProFTPD 1.3.5 | CVE-2021-46854 | 7.5 | Нет |
+| 21/tcp | ProFTPD 1.3.5 | CVE-2020-9272 | 7.5 | Нет |
+| 21/tcp | ProFTPD 1.3.5 | CVE-2019-19272 | 7.5 | Нет |
+| 21/tcp | ProFTPD 1.3.5 | CVE-2019-19271 | 7.5 | Нет |
+| 21/tcp | ProFTPD 1.3.5 | CVE-2019-19270 | 7.5 | Нет |
+| 21/tcp | ProFTPD 1.3.5 | CVE-2019-18217 | 7.5 | Нет |
+| 21/tcp | ProFTPD 1.3.5 | CVE-2016-3125 | 7.5 | Нет |
+| 21/tcp | ProFTPD 1.3.5 | CVE-2023-48795 | 5.9 | Нет |
+| 21/tcp | ProFTPD 1.3.5 | CVE-2017-7418 | 5.5 | Нет |
+| 21/tcp | ProFTPD 1.3.5 | CVE-2013-4359 | 5.0 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2023-38408 (RCE через PKCS#11) | 9.8 | Есть |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2016-1908 (X11 forwarding DoS) | 9.8 | Есть |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2015-5600 | 8.5 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2026-35414 | 8.1 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2026-35386 | 8.1 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2026-35385 | 8.1 | Нет |
 | 22/tcp | OpenSSH 6.6.1p1 | CVE-2020-15778 (scp command injection) | 7.8 | EDB-ID:46516 |
-| 80/tcp | Apache 2.4.7 | SQL-инъекции | — | Встроенный скрипт nmap |
-| 80/tcp | Apache 2.4.7 | DOM-based XSS | — | Встроенный скрипт nmap |
-| 80/tcp | Apache 2.4.7 | CSRF | — | Встроенный скрипт nmap |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2016-6515 | 7.8 | Есть |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2016-10012 | 7.8 | Есть |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2015-8325 | 7.8 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2016-10708 | 7.5 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2016-10009 | 7.5 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2021-41617 | 7.0 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2016-10010 | 7.0 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2015-6564 | 6.9 | Есть |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2019-6110 | 6.8 | Есть |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2019-6109 | 6.8 | Есть |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2026-35387 | 6.5 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2023-51385 | 6.5 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2016-3115 | 6.4 | Есть |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2023-48795 | 5.9 | Есть |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2020-14145 | 5.9 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2019-6111 | 5.9 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2018-15473 | 5.9 | Есть |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2016-6210 | 5.9 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2016-10011 | 5.5 | Есть |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2018-20685 | 5.3 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2018-15919 | 5.3 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2017-15906 | 5.3 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2016-20012 | 5.3 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2015-5352 | 4.3 | Есть |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2021-36368 | 3.7 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2025-61985 | 3.6 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2025-61984 | 3.6 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2026-35388 | 2.5 | Нет |
+| 22/tcp | OpenSSH 6.6.1p1 | CVE-2015-6563 | 1.9 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2026-28780 | 9.8 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2024-38476 | 9.8 | Есть |
+| 80/tcp | Apache 2.4.7 | CVE-2024-38474 | 9.8 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2023-25690 | 9.8 | Есть |
+| 80/tcp | Apache 2.4.7 | CVE-2022-31813 | 9.8 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2022-23943 | 9.8 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2022-22720 | 9.8 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2021-44790 | 9.8 | Есть |
+| 80/tcp | Apache 2.4.7 | CVE-2021-39275 | 9.8 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2021-26691 | 9.8 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2018-1312 | 9.8 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2017-7679 | 9.8 | Есть |
+| 80/tcp | Apache 2.4.7 | CVE-2017-3169 | 9.8 | Есть |
+| 80/tcp | Apache 2.4.7 | CVE-2017-3167 | 9.8 | Есть |
+| 80/tcp | Apache 2.4.7 | CVE-2024-40898 | 9.1 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2024-38475 | 9.1 | Есть |
+| 80/tcp | Apache 2.4.7 | CVE-2022-28615 | 9.1 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2022-22721 | 9.1 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2017-9788 | 9.1 | Есть |
+| 80/tcp | Apache 2.4.7 | CVE-2022-36760 | 9.0 | Есть |
+| 80/tcp | Apache 2.4.7 | CVE-2021-40438 | 9.0 | Есть |
+| 80/tcp | Apache 2.4.7 | CVE-2026-24072 | 8.8 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2025-58098 | 8.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2021-44224 | 8.2 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2024-38473 | 8.1 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2017-15715 | 8.1 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2016-5387 | 8.1 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2026-34059 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2026-29169 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2025-59775 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2024-47252 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2024-43394 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2024-43204 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2024-42516 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2024-39573 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2024-38477 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2024-38472 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2023-31122 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2022-30556 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2022-29404 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2022-26377 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2022-22719 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2021-34798 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2021-33193 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2021-26690 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2019-0217 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2018-8011 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2018-17199 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2018-1303 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2017-9798 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2017-15710 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2016-8743 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2016-2161 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2016-0736 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2006-20001 | 7.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2025-49812 | 7.4 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2023-38709 | 7.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2020-35452 | 7.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2014-0226 | 6.8 | Есть |
+| 80/tcp | Apache 2.4.7 | CVE-2026-33523 | 6.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2025-65082 | 6.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2024-24795 | 6.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2020-1927 | 6.1 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2019-10098 | 6.1 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2019-10092 | 6.1 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2016-4975 | 6.1 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2018-1302 | 5.9 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2018-1301 | 5.9 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2020-13938 | 5.5 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2025-66200 | 5.4 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2026-34032 | 5.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2026-33857 | 5.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2026-33007 | 5.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2022-37436 | 5.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2022-28614 | 5.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2022-28330 | 5.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2020-1934 | 5.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2020-11985 | 5.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2019-17567 | 5.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2019-0220 | 5.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2018-1283 | 5.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2015-3183 | 5.0 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2015-0228 | 5.0 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2014-3581 | 5.0 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2014-3523 | 5.0 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2014-0231 | 5.0 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2014-0098 | 5.0 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2013-6438 | 5.0 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2013-5704 | 5.0 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2026-33006 | 4.8 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2016-8612 | 4.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2015-3185 | 4.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2014-8109 | 4.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2014-0118 | 4.3 | Нет |
+| 80/tcp | Apache 2.4.7 | CVE-2014-0117 | 4.3 | Нет |
 | 80/tcp | Apache 2.4.7 | Slowloris DoS (CVE-2007-6750) | — | Уязвим |
+| 80/tcp | Apache 2.4.7 | SQL-инъекции | — | Встроенный скрипт nmap |
+| 80/tcp | Apache 2.4.7 | CSRF | — | Встроенный скрипт nmap |
+| 80/tcp | Apache 2.4.7 | Листинг директорий | — | Информативное |
+| 445/tcp | Samba 3.X-4.X | regsvc DoS (null dereference) | — | Уязвим |
+| 631/tcp | CUPS 1.7 | CVE-2014-5031 | 5.0 | Нет |
+| 631/tcp | CUPS 1.7 | CVE-2014-2856 | 4.3 | Нет |
+| 631/tcp | CUPS 1.7 | CVE-2014-5030 | 1.9 | Нет |
+| 631/tcp | CUPS 1.7 | CVE-2014-3537 | 1.2 | Нет |
+| 631/tcp | CUPS 1.7 | CVE-2013-6891 | 1.2 | Нет |
+| 631/tcp | CUPS 1.7 | Slowloris DoS (CVE-2007-6750) | — | Уязвим |
 | 3306/tcp | MySQL | Неавторизованный доступ | — | Любой клиент MySQL |
+| 3500/tcp | WEBrick 1.3.1 (Ruby 2.3.8) | CVE-2017-9225 | 9.8 | Есть |
+| 3500/tcp | WEBrick 1.3.1 (Ruby 2.3.8) | CVE-2022-28739 | 7.5 | Нет |
+| 3500/tcp | WEBrick 1.3.1 (Ruby 2.3.8) | CVE-2021-41819 | 7.5 | Нет |
+| 3500/tcp | WEBrick 1.3.1 (Ruby 2.3.8) | CVE-2021-28966 | 7.5 | Нет |
+| 3500/tcp | WEBrick 1.3.1 (Ruby 2.3.8) | CVE-2021-28965 | 7.5 | Нет |
+| 3500/tcp | WEBrick 1.3.1 (Ruby 2.3.8) | CVE-2020-25613 | 7.5 | Нет |
+| 3500/tcp | WEBrick 1.3.1 (Ruby 2.3.8) | CVE-2017-9229 | 7.5 | Есть |
+| 3500/tcp | WEBrick 1.3.1 (Ruby 2.3.8) | CVE-2015-9096 | 6.1 | Нет |
+| 3500/tcp | WEBrick 1.3.1 (Ruby 2.3.8) | CVE-2021-31810 | 5.8 | Нет |
+| 3500/tcp | WEBrick 1.3.1 (Ruby 2.3.8) | CVE-2023-28756 | 5.3 | Нет |
+| 3500/tcp | WEBrick 1.3.1 (Ruby 2.3.8) | Slowloris DoS (CVE-2007-6750) | — | Уязвим |
 | 6697/tcp | UnrealIRCd | Троянизированная версия (backdoor) | 10.0 | Metasploit |
 | 8080/tcp | Jetty 8.1.7 | CSRF | — | Встроенный скрипт nmap |
 | 8080/tcp | Jetty 8.1.7 | Slowloris DoS (CVE-2007-6750) | — | Уязвим |
