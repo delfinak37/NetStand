@@ -1,4 +1,4 @@
-# Стенд системы
+<img width="298" height="364" alt="изображение" src="https://github.com/user-attachments/assets/515832e3-694f-49f1-8e05-f90b5c2182a9" /># Стенд системы
 
 ## Основные задачи
 
@@ -68,7 +68,7 @@
   - Разрешён доступ к LAN
   - Запрещён доступ к роутеру
 
-## Настройка роутера Mestasploitable3
+## Настройка Mestasploitable3
 
 Создание виртуальной машины в `Vmware`, настройка сетевых интерфейсов на устройстве:
 
@@ -84,10 +84,18 @@
 
 <img width="800" height="577" alt="изображение" src="https://github.com/user-attachments/assets/5be06b47-d502-484e-81b6-33d6ff1fd516" />
 
-## Настройка роутера Kali linux
+## Настройка Kali linux
 
 Создание виртуальной машины в `Vmware`, настройка сетевого интерфейса на устройстве:
 
 - NetworkAdapter - `LAN Segment(LAN)`
 
-## Настройка роутера Ubuntu Server
+<img width="300" height="361" alt="изображение" src="https://github.com/user-attachments/assets/dcb71ad8-6ef9-4ece-b1d8-726fc9a8d3ee" />
+
+## Настройка Ubuntu Server
+
+Создание виртуальной машины в `Vmware`, настройка сетевого интерфейса на устройстве:
+
+- NetworkAdapter - `LAN Segment(NET)`
+
+<img width="300" height="361" alt="изображение" src="https://github.com/user-attachments/assets/11e9b6b6-a2f8-4722-b094-3d57bc8acd03" />
