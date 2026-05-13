@@ -336,4 +336,8 @@
 
 ### 3) Узел `OpenWrt.lan`
 
+<img width="786" height="527" alt="изображение" src="https://github.com/user-attachments/assets/59b5862d-9307-4a61-b670-061a4c5b028d" />
+
 ### Уязвимости
+
+- Ничего конкретного не было найдено
