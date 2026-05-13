@@ -18,7 +18,7 @@
 
 ## Схема сети
 
-...
+<img width="591" height="631" alt="Система сети-Система сети стенда(1)" src="https://github.com/user-attachments/assets/d371ac0b-8638-4b5e-8082-07f19fb2f6a4" />
 
 ## Настройка роутера OpenWrt
 
