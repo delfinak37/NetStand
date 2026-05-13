@@ -13,7 +13,7 @@
   - **VMware** - ПО для виртуализации
   - **OpenWrt** - в роли маршрутизатора
   - **Kali Linux** - атакующая машина
-  - **Ubuntu Server** - сервер
+  - **Ubuntu** - локальныый сегмент Ubuntu
   - **Metasploitable** - уязвимая система
 
 ## Схема сети
@@ -96,7 +96,7 @@
 
 <img width="300" height="361" alt="изображение" src="https://github.com/user-attachments/assets/dcb71ad8-6ef9-4ece-b1d8-726fc9a8d3ee" />
 
-## Настройка Ubuntu Server
+## Настройка Ubuntu
 
 Создание виртуальной машины в `Vmware`, настройка сетевого интерфейса на устройстве:
 
