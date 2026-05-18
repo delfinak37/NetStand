@@ -1,4 +1,4 @@
-<img width="579" height="65" alt="изображение" src="https://github.com/user-attachments/assets/6772e4f4-4aa4-449b-89b8-6414856e7512" /><img width="438" height="35" alt="изображение" src="https://github.com/user-attachments/assets/72d7fe38-4396-4a77-8ab0-dff19322c577" /># Генерация трафика
+# Генерация трафика
 
 ## Netcat
 
