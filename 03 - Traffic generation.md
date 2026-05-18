@@ -243,5 +243,16 @@ if __name__ == "__main__":
     start(args.iface, args.domain)
 ```
 
-<img width="749" height="557" alt="изображение" src="https://github.com/user-attachments/assets/0fe5ad21-d21d-4cef-8d34-f65dac96c62a" />
+Запуск скрипта:
 
+<img width="606" height="356" alt="изображение" src="https://github.com/user-attachments/assets/673079fc-e3d4-4e31-af96-2ef9cbc64b09" />
+
+Обращение с `Metasploitable` к домену **google.com**
+
+<img width="441" height="115" alt="изображение" src="https://github.com/user-attachments/assets/7e82bd19-4cfa-40f8-b262-2122dfa35c7d" />
+
+- Теперь `Metasploitable` обращается не к серверам **google.com**, а к `Kali`
+
+## VLAN Hopping
+
+## CAM Table Overflow
