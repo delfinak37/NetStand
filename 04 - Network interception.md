@@ -34,7 +34,7 @@
 
 В **Wireshark** появилось несколько записей:
 
-<img width="1677" height="433" alt="изображение" src="https://github.com/user-attachments/assets/504f28e7-8e58-49be-adbf-a4a100781650" />
+<img width="1680" height="242" alt="изображение" src="https://github.com/user-attachments/assets/4596a0d4-7db7-4977-b698-d10ea473c300" />
 
 - **Установка соединения**
     - 935: SYN
@@ -51,3 +51,13 @@
 Перехваченное сообщение находится сегменте `data`:
 
 <img width="1601" height="591" alt="изображение" src="https://github.com/user-attachments/assets/29844375-40ec-4bf4-867a-c6cd50bec631" />
+
+## Перехват пароля
+
+Переход к web-интерфейсу настроек роутера:
+
+<img width="809" height="608" alt="изображение" src="https://github.com/user-attachments/assets/e79cc89f-c713-4b5c-9a9d-415c1b8ab191" />
+
+В **Wireshark** появилась запись, содержащия учетные данные роутера:
+
+<img width="1920" height="771" alt="изображение" src="https://github.com/user-attachments/assets/507fb935-1b45-4a19-b7e5-62f27e8f3c21" />
